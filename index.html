@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <h1>Hello, Vue!</h1>
+
+
+
+
+
+
+<div id="app">
+  <div v-if="showBooks">
+<p> {{ title }} - {{author}} - {{age}} </p>
+<button v-on:click="age++">increase age</button>
+<button v-on:click="age--">decrease age</button>
+<div @click="changeTitle('Oathbringer')">Change book title </div>
+</div>
+<button @click="toggleShowBooks">
+  <span> hide books </span>
+  </button
+  </div>
+
+
+
+
+
+
+
+
+  <script src="yousef.js"></script>
+
+  </body>
+</html>
